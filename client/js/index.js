@@ -206,7 +206,7 @@ function appendMessage(message) {
     if (slicedMessage3 === "TCR: Rem task " && nickname === "TCR") {
         //document.getElementById(slicedMessage5).remove();
         sock.emit('spliceIdx', slicedMessage5);
-        sock.emit('chat-to-server', "Task Id: " + slicedMessage5 + " completed");
+        sock.emit('chat-to-server', "Task Id: " + slicedMessage5 + " completed and removed");
     } else if (slicedMessage3 === "TCR: Sel task " && nickname === "TCR") {
         sock.emit('selTask', slicedMessage5);
         sock.emit('chat-to-server', "Task Id: " + slicedMessage5 + " selected");
