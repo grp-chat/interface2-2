@@ -453,7 +453,10 @@ sock.on('clrFill', data => {
 
     if (data.taskId != "") {
         const selTask = document.getElementById(data.taskId);
+        
         selTask.classList.add('active');
+        
+
         if (data.unFill != "") {
             const unSelTask = document.getElementById(data.unFill);
             unSelTask.classList.remove('active');
