@@ -69,6 +69,8 @@ const promptMsg = () => {
         nickname = 'RYD'
     } else if (nick === '4162') {
         nickname = 'JT'
+    } else if (nick === '2318') {
+        nickname = 'CT'
     } else if (nick === '6139') {
         nickname = 'KSY'
     } else {
